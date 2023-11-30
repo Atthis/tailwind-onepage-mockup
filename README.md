@@ -5,7 +5,7 @@
 
 Exercice made for my web development course.
 
-This was my first try with [Tailwind](https://tailwindcss.com/) implementing a public mockup from [NicePage](https://nicepage.com/).
+This was my first try with [Tailwind](https://tailwindcss.com/) implementing a [public mockup](https://nicepage.com/website-mockup/preview/building-quality-homes-64324) from [NicePage](https://nicepage.com/).
 
 The aim was to have no css file, and be as close as possible from the mockup on each device option.
 
