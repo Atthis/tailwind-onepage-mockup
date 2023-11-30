@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Based on the NicePage website mockup : https://nicepage.com/website-mockup/preview/building-quality-homes-64324 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building quality home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Ubuntu:wght@200;300;400;500;700&family=Playfair+Display:wght@400&family=Noto+Sans+Pahawh+Hmong&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        grey: '#f2f2f2',
+                        middleGrey: '#acacb0',
+                        darkGrey: '#555c66',
+                        warmGrey: '#eaeaec',
+                        warmGrey2: '#808080',
+                        grey80: '#333333'
+                    },
+                    fontSize: {
+                        '4.5xl': ['2.6rem', '2.75rem'],
+                        'ssm': ['0.8rem', '1.1rem']
+                    },
+                    fontFamily: {
+                        'body': ['Open Sans', 'sans-serif'],
+                        'titles': ['Ubuntu', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif']
+                    },
+                    letterSpacing: {
+                        bigwide: '0.2em',
+                        extrawide: '0.5em'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="box-border font-body">
+    <header class="flex justify-between items-center px-12 py-8 lg:max-w-[1050px] lg:mx-auto">
+        <p class="font-titles font-semibold text-2xl text-middleGrey">logo</p>
+        <nav class="w-6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="fill-grey80 hover:cursor-pointer hover:fill-darkGrey">
+                <path
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+            </svg>
+        </nav>
+        <!-- <input type="checkbox" name="menu-burger" id="menu-burger">
+        <label for="menu-burger">Click</label>
+        <label for="menu-burger">Clack</label> -->
+    </header>
+    <main>
+        <section class="hero flex flex-col bg-warmGrey sm:w-full sm:flex-row sm:items-center ">
+            <div class="bg-[url('./assets/imgs/part-of-white-building.jpg')] bg-cover aspect-square sm:w-1/2 lg:w-5/12 lg:max-h-[75vh]"></div>
+            <div class="hero__text w-full px-12 py-8 sm:ps-8 sm:w-7/12">
+                <h1 class="font-titles text-darkGrey text-4.5xl sm:text-4xl md:text-4.5xl"><span
+                        class="subtitle uppercase tracking-widest text-grey80 text-xl sm:text-lg md:text-xl">design
+                        agency</span><br>Architecture</h1>
+                <p class="py-6 text-body font-light text-xl sm:text-base md:text-lg lg:max-w-[450px] lg:text-xl">We value context and history. We question standards and givens. We
+                    embrace
+                    flaws and anomalies.
+                </p>
+                <button class="mb-4 px-12 py-2 bg-darkGrey hover:bg-zinc-600 text-white uppercase text-lg font-medium tracking-wider sm:text-base md:text-lg">Learn more</button>
+            </div>
+        </section>
+        <section class="infos mx-auto max-w-[1050px] px-12 py-6 text-center">
+            <h2 class="font-titles text-5xl font-light text-darkGrey capitalize leading-tight"><span
+                    class="subtitle inline-block mb-4 text-lg uppercase tracking-extrawide font-extralight text-grey80">We
+                    design with
+                </span><br>the future
+                in mind</h2>
+            <p class="py-6 text-body text-sm">An integrated architecture, design, planning and consulting firm — 6000+ professionals networked across 48 offices—providing global
+                reach with
+                local touch. AGENCY is
+                a collaborative interdisciplinary practice engaging contemporary culture through architecture, urbanism, and advocacy. Our people collaborate across a network of 24
+                offices on three continents.</p>
+            <button class="mb-8 px-12 py-2 border-2 border-current uppercase font-medium tracking-widest">Learn more</button>
+        </section>
+        <section class="details flex flex-col sm:flex-row sm:flex-wrap">
+            <section class="h-48 flex items-center overflow-hidden sm:w-1/2 md:w-1/3 md:h-auto lg:max-h-[450px]">
+                <img src="./assets/imgs/women-on-office-working.jpeg" alt="woman on office working" class="object-cover md:h-full lg:h-auto">
+            </section>
+            <section class="h-48 flex items-center overflow-hidden sm:w-1/2 md:w-1/3 md:h-auto lg:max-h-[450px]">
+                <img src="./assets/imgs/flatiron-building-in-gray-scale.jpeg" alt="flatiron building in low-angle shot" class="object-cover md:h-full lg:h-auto">
+            </section>
+            <section class="md:w-1/3">
+                <div class="px-3 py-6 bg-black font-titles text-3xl font-medium text-white sm:p-6 md:aspect-square md:flex md:items-center lg:aspect-auto lg:h-1/2">
+                    <h3 class="">We are architects, planners, and designers</h3>
+                </div>
+                <div class="px-3 py-6 bg-grey text-sm sm:p-6 md:aspect-square lg:aspect-auto lg:h-1/2">
+                    <p>At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future. We believe
+                        that architecture and design matter, and that through the application of our skills...</p>
+                </div>
+            </section>
+
+        </section>
+        <section class="services p-12 bg-black text-white">
+            <div class="container mx-auto max-w-[1050px] text-sm">
+                <h2 class="mb-8 font-titles text-5xl capitalize text-center">Marketing your home</h2>
+                <p class="max-w-screen-md mx-auto text-center">The sale of a significant home is truly noteworthy. To represent a home of distinction requires
+                    highly-qualified real
+                    estate
+                    professionals with
+                    global reach and
+                    local expertise.</p>
+                <div class="mt-14 mb-4 flex flex-wrap gap-10 justify-evenly">
+                    <article class="flex items-start gap-5 md:max-w-[45%] lg:max-w-[30%]">
+                        <img src="./assets/icons/leadership.svg" alt="" aria-hidden="true" class="w-12 mt-1">
+                        <div>
+                            <h4 class="mb-4 text-lg font-medium tracking-wider uppercase">leadership</h4>
+                            <p>Sample text. Click to select the text box. <a href="#" class="text-blue-200">Click again</a> or double click to start editing the text.</p>
+                        </div>
+                    </article>
+                    <article class="flex items-start gap-5 md:max-w-[45%] lg:max-w-[30%]">
+                        <img src="./assets/icons/carreer.svg" alt="" aria-hidden="true" class="w-12 mt-1">
+                        <div>
+                            <h4 class="mb-4 text-lg font-medium tracking-wider uppercase">carreers</h4>
+                            <p>Sample text. Click to select the text box. <a href="#" class="text-blue-200">Click again</a> or double click to start editing the text.</p>
+                        </div>
+                    </article>
+                    <article class="flex items-start gap-5 md:max-w-[45%] lg:max-w-[30%]">
+                        <img src="./assets/icons/partnership.svg" alt="" aria-hidden="true" class="w-12 mt-1">
+                        <div>
+                            <h4 class="mb-4 text-lg font-medium tracking-wider uppercase">partnership</h4>
+                            <p>Sample text. Click to select the text box. <a href="#" class="text-blue-200">Click again</a> or double click to start editing the text.</p>
+                        </div>
+                    </article>
+                    <article class="flex items-start gap-5 md:max-w-[45%] lg:max-w-[30%]">
+                        <img src="./assets/icons/about-us.svg" alt="" aria-hidden="true" class="w-12 mt-1">
+                        <div>
+                            <h4 class="mb-4 text-lg font-medium tracking-wider uppercase">about us</h4>
+                            <p>Sample text. Click to select the text box. <a href="#" class="text-blue-200">Click again</a> or double click to start editing the text.</p>
+                        </div>
+                    </article>
+                    <article class="flex items-start gap-5 md:max-w-[45%] lg:max-w-[30%]">
+                        <img src="./assets/icons/quickness.svg" alt="" aria-hidden="true" class="w-12 mt-1">
+                        <div>
+                            <h4 class="mb-4 text-lg font-medium tracking-wider uppercase">quickness</h4>
+                            <p>Sample text. Click to select the text box. <a href="#" class="text-blue-200">Click again</a> or double click to start editing the text.</p>
+                        </div>
+                    </article>
+                    <article class="flex items-start gap-5 md:max-w-[45%] lg:max-w-[30%]">
+                        <img src="./assets/icons/fix-price.svg" alt="" aria-hidden="true" class="w-12 mt-1">
+                        <div>
+                            <h4 class="mb-4 text-lg font-medium tracking-wider uppercase">fix price</h4>
+                            <p>Sample text. Click to select the text box. <a href="#" class="text-blue-200">Click again</a> or double click to start editing the text.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section
+            class="quote p-12 bg-[url('./assets/imgs/man-walking-un-front-of-building.jpeg')] bg-cover bg-center h-[350px] sm:aspect-auto sm:h-[66vw] sm:ps-20 lg:max-h-[700px]">
+            <div class="max-w-[1050px] mx-auto">
+                <p class="max-w-[500px] ms-auto me-0 font-titles font-medium text-white text-right uppercase leading-loose">WE ARE AN INDEPENDENT FIRM OF DESIGNERS, ENGINEERS,
+                    ARCHITECTS, PLANNERS,
+                    CONSULTANTS
+                    AND TECHNICAL
+                    SPECIALISTS
+                    WORKING
+                    ACROSS EVERY ASPECT OF TODAY'S BUILT
+                    ENVIRONMENT.</p>
+            </div>
+        </section>
+        <section class="options px-12 py-14 bg-grey">
+            <div class="mx-auto max-w-[1050px] flex flex-col gap-20 text-center text-sm sm:flex-row">
+                <article>
+                    <p class="big-letter my-4 font-titles text-4xl font-semibold text-darkGrey">A</p>
+                    <h2 class="mb-4 font-serif text-2xl capitalize tracking-wide">Easy to <span class="font-semibold">use tools</span></h2>
+                    <p>Strategic planning is an organization’s process for defining their strategy so that they can accomplish specific goals and objectives. We offer affordable
+                        custom
+                        website design done by professionals.</p>
+                    <a href="#" class="block my-4 font-semibold text-ssm tracking-bigwide uppercase cursor-pointer">read more</a>
+                </article>
+                <article>
+                    <p class="big-letter my-4 font-titles text-4xl font-semibold text-darkGrey">B</p>
+                    <h2 class="mb-4 font-serif text-2xl capitalize tracking-wide">Special <span class="font-semibold">discounts</span></h2>
+                    <p>We can help you to boost engagement with your visitors by ensuring that people have access to the information that they. A business concept is a statement
+                        that
+                        describes the reach and reason of existence of a given business idea.</p>
+                    <a href="#" class="block my-4 font-semibold text-ssm tracking-bigwide uppercase cursor-pointer">read more</a>
+                </article>
+            </div>
+        </section>
+        <section class="gallery flex flex-wrap flex-col sm:flex-row">
+            <img src="./assets/imgs/newyork-train-station-building.jpeg" alt="new-york train station building frontage"
+                class="w-full h-[350px] object-cover sm:w-1/3 sm:h-[200px] lg:h-[300px]">
+            <img src="./assets/imgs/architecture-bar.jpeg" alt="modern bar interior with people in back light"
+                class="w-full h-[350px] object-cover sm:w-1/3 sm:h-[200px] lg:h-[300px]">
+            <img src="./assets/imgs/modern-building-in-fog.jpeg" alt="modern buildings in fog" class="w-full h-[350px] object-cover sm:w-1/3 sm:h-[200px] lg:h-[300px]">
+            <img src="./assets/imgs/man-walking-in-urban-environment.jpeg" alt="man carrying a shopping bag in an urban environment"
+                class="w-full h-[350px] object-cover sm:w-1/3 sm:h-[200px] lg:h-[300px]">
+            <img src="./assets/imgs/skyscrapers-on-blue-sky.jpg" alt="multiple skyscrapers on a blue sky" class="w-full h-[350px] object-cover sm:w-1/3 sm:h-[200px] lg:h-[300px]">
+            <img src="./assets/imgs/modern-building-frontage.jpeg" alt="modern building frontage with round windows"
+                class="w-full h-[350px] object-cover sm:w-1/3 sm:h-[200px] lg:h-[300px]">
+        </section>
+        <section class="form px-12 py-10 bg-black text-white">
+            <div class="mx-auto max-w-[1050px]">
+                <section class="flex flex-col gap-10 sm:flex-row">
+                    <section class="grow text-xl leading-relaxed">
+                        <h2 class="mb-4 font-titles text-3xl text-warmGrey2">location</h2>
+                        <p>28 Jackson Blvd Ste 1020 Chicago</p>
+                        <p>IL 66004-2340</p>
+                        <h2 class="mt-12 mb-4 font-titles text-3xl text-warmGrey2">follow us</h2>
+                        <ul>
+                            <li class="inline-block h-[26px] aspect-square me-2 p-1 rounded-full bg-white">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="aspect-square">
+                                        <path
+                                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="inline-block h-[26px] aspect-square mx-2 p-1 rounded-full bg-white">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="aspect-square">
+                                        <path
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="inline-block h-[26px] aspect-square mx-2 p-1 rounded-full bg-white">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="aspect-square">
+                                        <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="inline-block h-[26px] aspect-square mx-2 p-1 rounded-full bg-white">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="aspect-square">
+                                        <path
+                                            d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <form action="" class="grow-[2]">
+                        <h2 class="mb-4 font-titles text-3xl text-warmGrey2">contact form</h2>
+                        <label for="name" class="block w-0 h-0 overflow-hidden">Enter your name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required autocomplete="name"
+                            class="w-full mb-4 px-3 py-2 placeholder:text-sm placeholder:text-darkGrey">
+                        <label for="email" class="block w-0 h-0 overflow-hidden">Enter your email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required autocomplete="email"
+                            class="w-full mb-4 px-3 py-2 placeholder:text-sm placeholder:text-darkGrey">
+                        <label for="message" class="block w-0 h-0 overflow-hidden">Enter your message</label>
+                        <textarea name="message" id="message" rows="4" placeholder="Enter your message" required
+                            class="w-full mb-4 px-3 py-2 placeholder:text-sm placeholder:text-darkGrey"></textarea>
+                        <button class="block px-7 py-2 bg-white hover:bg-zinc-200 text-black uppercase text-xs font-semibold tracking-wider">submit</button>
+                    </form>
+                </section>
+                <ul class="w-max mx-auto mt-20">
+                    <li class="inline-block mx-1">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="h-[20px] aspect-square fill-white">
+                                <path
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="inline-block mx-1">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-[20px] aspect-square fill-white">
+                                <path
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="inline-block mx-1">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-[20px] aspect-square fill-white">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="inline-block mx-1">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-[20px] aspect-square fill-white">
+                                <path
+                                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="py-8 bg-grey80 text-center text-white text-xs">
+        <p><a href="#" class="text-blue-200 underline">Website template</a> created with <a href="#" class="text-blue-200 underline">Website Builder Software</a></p>
+    </footer>
+</body>
+
+</html>
